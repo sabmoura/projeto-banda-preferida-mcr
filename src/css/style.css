@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Germania+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./main.css');
+@import url('./media-queries.css');
+@import url('./reset.css');
+
+/* 
+    Estilo CSS para a página dedicada à banda My Chemical Romance.
+*/
+
+:root {
+    /* Fontes */
+    --font-sans-family: 'Inter', sans-serif;
+    --font-serif-family: 'Alegreya', serif;
+    --font-heading-family: 'Germania One', system-ui;
+
+    /* Espessura de fonte */
+    --font-thin-weight: 300;
+    --font-regular-weight: 400;
+    --font-semibold-weight: 600;
+    --font-bold-weight: 700;
+    
+    /* Cores de texto */
+    --color-accent-text-1: #791421;
+    --color-accent-text-2: #fd5d73;
+    --color-accent-text-3: gray;
+    --color-default-text: #181818;
+    --color-light-text: #f1e5dd;
+    
+    /* Cores de borda */
+    --color-dark-border: #181818;
+    --color-default-border: #cfcfcf;
+    --color-accent-border: #fd5d73;
+
+    /* Cores de fundo */
+    --color-accent-background: #791421;
+    --color-default-background: #cfcfcf;
+    --color-dark-background-1: #191919;
+    --color-dark-background-2: #0d0d0d;
+    --color-pink-background: #fd5d73;
+
+    /* Gradiente de fundo */
+    --gradient-background: 145deg, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.692);
+}
+
+html {
+    font-size: 16px;
+    background: var(--color-default-background);
+    color: var(--color-default-text);
+}
+
+body {
+    font-family: var(--font-sans-family);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, main,
+section, article {
+    container-type: inline-size;
+}
+
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-default-text);
+    font-family: var(--font-sans-family);
+    font-weight: var(--font-sans-weight);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1.5rem 0 1rem 0;
+}
+
+h3 {
+    color: var(--color-accent-text-1);
+    font-family: var(--font-heading-family);
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+
+/* p, */
+li,
+figcaption {
+    min-width: min-content;
+    max-width: 35ch;
+    text-wrap: pretty;
+}
