@@ -25,6 +25,6 @@ Este projeto acadêmico originalmente incluía arquivos MP3 protegidos. Por resp
 - A versão de demonstração usa embeds do Spotify e um áudio livre para manter a funcionalidade sem violar leis.
 - O código mantém a estrutura de áudio HTML5 para fins educacionais.
 
-### Licença:
+## Licença:
 Uso acadêmico e educacional.
 
