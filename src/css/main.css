@@ -1,0 +1,283 @@
+
+.main-conteiner {
+    /* Estilo do contêiner principal */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.main-conteiner > section > .section-conteiner {
+    /* Estilo do contêiner de cada seção */
+    justify-self: center;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+/* Main - Hero */
+
+.hero-imagem {
+    /* Estilo da imagem de fundo do hero */
+    background-image:
+        linear-gradient(var(--gradient-background)),
+        url('../assets/img/mcr-band-2023.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 30%;
+    width: 100%;
+}
+
+#hero h1 {
+    display: none;
+}
+
+/* Main - Sobre */
+
+#sobre {
+    /* Estilo da seção Sobre */
+    width: 100%;
+}
+
+#sobre > .section-conteiner {
+    /* Estilo do contêiner da seção Sobre */
+    width: 80%;
+    padding: 1rem 0;
+}
+
+.sobre-artigo {
+    /* Estilo do artigo da seção Sobre */
+    padding: 2rem;
+}
+
+
+/* Main - Ouça */
+
+#audio {
+    /* Estilo da seção Ouça */
+    background-color: var(--color-accent-background);
+}
+
+#audio > .section-conteiner {
+    /* Estilo do contêiner da seção Ouça */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem 0;
+}
+
+#audio .section-title {
+    /* Estilo do título da seção Ouça */
+    color: var(--color-light-text);
+    font-weight: var(--font-thin-weight);
+}
+
+#audio h3 {
+    /* Estilo do subtítulo da seção Ouça */
+    color: var(--color-light-text);
+    font-weight: var(--font-regular-weight);
+    text-transform: lowercase;
+    margin: 0 auto;
+}
+
+.audio-item {
+    /* Estilo de cada item de áudio */
+    background-color: var(--color-pink-background);
+    color: var(--color-default-text);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+audio {
+    /* Estilo do player de áudio */
+    width: 100%;
+    height: 50px;
+}
+
+.audio-item h4 {
+    /* Estilo do título do áudio */
+    color: var(--color-default-text);
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.audio-item p {
+    /* Estilo da descrição do áudio */
+    color: var(--color-default-text);
+    font-family: var(--font-serif-family);
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Main - Discografia */
+
+#discos {
+    /* Estilo da seção de discografia */
+    background-color: var(--color-dark-background-1);
+}
+
+#discos .section-conteiner {
+    /* Estilo do contêiner da seção de discografia */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: .5rem;
+}
+
+#discos .section-title {
+    /* Estilo do título da discografia */
+    color: var(--color-light-text);
+    font-weight: 300;
+}
+
+#discos h3 {
+    /* Estilo do subtítulo da discografia */
+    color: var(--color-accent-text-2);
+    font-weight: var(--font-regular-weight);
+    text-transform: lowercase;
+    margin: 0 auto;
+}
+
+.discos-item {
+    /* Estilo de cada item da discografia */
+    background-color: black;
+    color: var(--color-light-text);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Main - Discografia - Figure */
+.discos-item > figure {
+    /* Estilo do contêiner da imagem e título do disco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.discos-item > figure > img {
+    /* Estilo da imagem do disco */
+    aspect-ratio: 1 / 1;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+.discos-item > figure > figcaption {
+    /* Estilo do título do disco */
+    font-family: var(--font-heading-family);
+    font-weight: var(--font-thin-weight);
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.discos-item > figure > figcaption > strong {
+    color: var(--color-accent-text-2);
+}
+
+/* Main - Discografia - Tabela */
+.discos-item > disco-tabela {
+    /* Estilo da tabela de informações do disco */
+    border-collapse: collapse;
+}
+
+.disco-tabela-linha {
+    padding: 0.5rem;
+}
+
+.disco-tabela-linha > th {
+    /* Estilo dos cabeçalhos da tabela de informações do disco */
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+    color: var(--color-accent-text-3);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.disco-tabela-linha > td {
+    /* Estilo das células da tabela de informações do disco */
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px dotted var(--color-dark-border);
+}
+
+.disco-tabela-linha:last-of-type > td {
+    border: none;
+}
+
+.disco-tabela-celula-nome-ordem,
+.disco-tabela-celula-dado-ordem {
+    /* Estilo das células de nome e dados da ordem */
+    color: var(--color-accent-text-3);
+    font-weight: var(--font-thin-weight);
+    text-align: center;
+}
+
+.disco-tabela-celula-dado-faixa {
+    /* Estilo das células de dados da faixa */
+    font-family: var(--font-serif-family);
+}
+
+/* Main - Discografia - Tabela - Botão */
+.clipe-btn {
+    /* Estilo do botão de clipe */
+    border-radius: 5px;
+    background-color: red;
+    color: var(--color-light-text);
+    font-size: 0.6rem;
+    transition: background-color 0.3s ease;
+    padding: 0.1rem 0.5rem 0.2rem 0.6rem;
+    margin: 0 0.5rem;
+}
+
+.clipe-btn:hover {
+    /* Efeito hover no botão de clipe */
+    background-color: var(--color-accent-background);
+    transition: background-color 0.3s ease;
+}
+
+/* Main - Galeria */
+
+#galeria {
+    /* Estilo da seção Galeria */
+    background-color: var(--color-default-background);
+    color: var(--color-default-text);
+    width: 100%;
+}
+
+#galeria > .section-conteiner {
+    /* Estilo do contêiner da seção Galeria */
+    max-width: 90%;
+}
+
+.galeria-imagens {
+    /* Estilo do contêiner de imagens da galeria */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.galeria-item {
+    /* Estilo das imagens na galeria */
+    width: 600px;
+    height: 300px;
+}
+
+.galeria-item > img {
+    /* Estilo da imagem dentro do item da galeria */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
