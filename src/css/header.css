@@ -1,0 +1,46 @@
+header {
+    /* Estilo do cabeçalho */
+    background-color: var(--color-accent-background);
+    color: var(--color-light-text);
+    width: 100%;
+    place-items: center;    
+}
+
+.header-conteiner {
+    /* Estilo do contêiner do cabeçalho */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.header-logo {
+    /* Estilo do logotipo no cabeçalho */
+    font-family: var(--font-heading-family);
+    font-size: 1.8rem;
+    padding: 0 .4rem;
+}
+
+/* Cabeçalho - Navegação */
+
+.header-menu-lista {
+    /* Estilo da lista de navegação do cabeçalho */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-menu-item {
+    /* Estilo dos itens do menu */
+    font-family: var(--font-sans-family);
+    text-transform: lowercase;
+    padding: 0.2rem 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.header-menu-item:hover {
+    /* Efeito de hover no item do menu */
+    border-bottom: 2px solid var(--color-accent-text-2);
+    transition: border 0.3s ease;
+}
