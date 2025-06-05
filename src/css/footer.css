@@ -1,0 +1,76 @@
+footer {
+    /* Estilo do rodapé */
+    background-color: var(--color-dark-background-2);
+    color: var(--color-light-text);
+    width: 100%;
+    place-items: center;
+    line-height: 1;
+}
+
+.footer-conteiner {
+    /* Estilo do conteiner do rodapé */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 2rem;
+    border-bottom: 0.4px solid var(--color-default-border);
+}
+
+.footer-conteiner > span {
+    /* Estilo do título no rodapé */
+    font-family: var(--font-heading-family);
+    font-size: 1.3rem;
+    color: var(--color-accent-text-2);
+    text-transform: capitalize;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer-conteiner > ul {
+    /* Estilo da lista de links no rodapé */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.footer-conteiner > ul li {
+    /* Estilo dos itens da lista de links no rodapé */
+    font-family: var(--font-sans-family);
+    font-weight: var(--font-thin-weight);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+}
+
+.footer-conteiner > ul li:hover {
+    /* Efeito de hover nos itens da lista de links no rodapé */
+    border: 2px solid var(--color-accent-border);
+    transition: border 0.3s ease;
+}
+
+footer > p {
+    /* Estilo do parágrafo no rodapé */
+    text-align: center;
+    padding-block: 0.5rem 1rem;
+}
+
+footer > p > span {
+    /* Estilo do texto destacado no rodapé */
+    color: var(--color-accent-text-2);
+}
+
+footer > p > a {
+    /* Estilo do link no rodapé */
+    font-family: var(--font-body-family);
+    font-weight: var(--font-bold-weight);
+}
+
+footer > p > a:hover {
+    /* Efeito de hover no link do rodapé */
+    color: var(--color-accent-text-2);
+    border: 2px wavy var(--color-accent-text-2);
+    transition: border 0.3s ease;
+    
+}
